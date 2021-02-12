@@ -1,0 +1,14 @@
+{
+  "name": "jgreco/solid",
+  "authors": [
+    {
+      "name": "Jonathan Greco",
+      "email": "jgreco@axome.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Solid\\": "Solid/"
+    }
+  }
+}
