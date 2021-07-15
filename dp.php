@@ -1,5 +1,7 @@
 <?php
 
+use DesignPatterns\Factory\Main;
+
 require_once './vendor/autoload.php';
 
 $builder = new DI\ContainerBuilder();
@@ -12,7 +14,6 @@ $function = "factory";
 
 switch($function) {
     case "factory":
-        $car = $container->get('Car');
-        $car->vroum();
+        $container->get(Main::class);
         break;
 }
