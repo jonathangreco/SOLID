@@ -2,6 +2,7 @@
 
 namespace Solid\SingleResponsability\Document;
 
+use Solid\BuildableInterface;
 use Solid\SingleResponsability\Document\Good\Document as GoodDocument;
 use Solid\SingleResponsability\Document\Bad\Document as BadDocument;
 use Solid\SingleResponsability\Document\Good\HtmlExportableDocument;
@@ -11,7 +12,7 @@ use Solid\SingleResponsability\Document\Good\PdfExportableDocument;
  * Class Build (Applicative)
  * @package Solid\SingleResponsability
  */
-class Build
+class Build implements BuildableInterface
 {
     public function bad($outputWanted = "html")
     {
